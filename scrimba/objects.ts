@@ -12,7 +12,7 @@ const eg3: {} = {};
 // PARAMETERS
 //------------
 
-import { Person } from './person.model';
+import { Person } from './interfaces/person.model';
 
 // Put types for parameters
 function add(val1: number, val2: number) {
@@ -54,12 +54,21 @@ const example3: person = {firstName: 'Dollan'};
 example3.firstName = 'Dylan';
 
 //-------------
-// CUSTOM TYPES
+// INTERFACES
 //-------------
-import { IPerson } from './person.interface';
+import { IPerson } from './interfaces/person.interface';
 
 const example1: IPerson = {firstName: 'Dollan', middleName: 'Dollan', lastName: 'Dollan'};
 
 example1.firstName = 'Dylan';
 example1.middleName = 'Coding God';
 example1.lastName = 'Israel';
+
+//---------
+// BARRELS
+//---------
+
+// 1. make interfaces folder
+// 2. make index.ts in interfaces folder, exporting * from specific interfaces
+// 3. import with object destructuring
+import { Pig, Cat } from './interfaces/index';

@@ -20,8 +20,8 @@ let exTuple: [string, number] = ['string', 2];
 // ENUMS
 //--------
 // - giving more friendly names to sets of numeric values
-import { Age } from './age.enum';
-import { Names } from './name.enum';
+import { Age } from './enums/age.enum';
+import { Names } from './enums/name.enum';
 
 function totalAge(age1: Age, age2: Age) {
   return age1 + age2;
