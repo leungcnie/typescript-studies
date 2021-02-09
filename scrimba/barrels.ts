@@ -1,6 +1,7 @@
 //---------
 // BARRELS
 //---------
+// Makes exporting interfaces a little cleaner
 
 // 1. make interfaces folder
 // 2. make index.ts in interfaces folder, exporting * from specific interfaces

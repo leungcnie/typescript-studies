@@ -3,7 +3,7 @@ export class Person {
   middleName: string;
   lastName: string;
   
-  constructor(data?: any) {
+  constructor(data?: any) { // Builds our obj
       this.firstName = data.firstName || 'Dylan';
       this.lastName = data.lastName || 'Israel';
       this.middleName = data.middleName;    
