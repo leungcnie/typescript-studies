@@ -52,23 +52,3 @@ function neverExample(): never {
 type person = {firstName: string};
 const example3: person = {firstName: 'Dollan'};
 example3.firstName = 'Dylan';
-
-//-------------
-// INTERFACES
-//-------------
-import { IPerson } from './interfaces/person.interface';
-
-const example1: IPerson = {firstName: 'Dollan', middleName: 'Dollan', lastName: 'Dollan'};
-
-example1.firstName = 'Dylan';
-example1.middleName = 'Coding God';
-example1.lastName = 'Israel';
-
-//---------
-// BARRELS
-//---------
-
-// 1. make interfaces folder
-// 2. make index.ts in interfaces folder, exporting * from specific interfaces
-// 3. import with object destructuring
-import { Pig, Cat } from './interfaces/index';

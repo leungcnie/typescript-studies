@@ -1,3 +1,3 @@
 export interface Pig {
-  porkbelly: boolean;
+  bacon: boolean;
 }
